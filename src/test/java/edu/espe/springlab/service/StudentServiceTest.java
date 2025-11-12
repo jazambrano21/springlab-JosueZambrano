@@ -4,7 +4,7 @@ import edu.espe.springlab.domain.Student;
 import edu.espe.springlab.dto.StudentRequestData;
 import edu.espe.springlab.repository.StudentRepository;
 import edu.espe.springlab.service.impl.StudentServiceImpl;
-import edu.espe.springlab.exception.ConflictException; // Asegúrate de tener esta clase
+import edu.espe.springlab.web.advice.ConflictException;// Asegúrate de tener esta clase
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
