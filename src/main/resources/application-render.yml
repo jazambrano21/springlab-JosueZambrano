@@ -7,7 +7,7 @@ spring:
     password:
 
 
-  #Configuracion de JPA/Hibernate
+  #Configuracion de JPA/Hibernate 1222
   jpa:
     hibernate:
       ddl-auto: update
