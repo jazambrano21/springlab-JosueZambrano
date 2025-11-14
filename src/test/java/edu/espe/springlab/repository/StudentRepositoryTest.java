@@ -25,8 +25,23 @@ public class StudentRepositoryTest {
 
         repository.save(s);
 
+        //Josue Zambrano
+
+        Student s2 = new Student();
+        s2.setFullName("Second User");
+        s2.setEmail("test@example.com");
+        s2.setBirthDate(LocalDate.of(2001, 5, 15));
+        s2.setActive(true);
+
+        // Verificar que solo existe un registro con ese email
+        long countBefore = repository.count();
+        assertThat(countBefore).isEqualTo(1);
+
+        // Confirmar que findByEmail retorna el primer estudiante
         var result = repository.findByEmail("test@example.com");
         assertThat(result).isPresent();
         assertThat(result.get().getFullName()).isEqualTo("Test User");
+
     }
 }
+
