@@ -8,6 +8,9 @@ on:
     branches:
       - main
 
+
+#JOSUE ZAMBRANO
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -29,3 +32,5 @@ jobs:
 
       - name: Run Test
         run: ./gradlew test
+
+#JOSUE ZAMBRANO
